@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="CHdY-9Pu_2e6IQDk2Wmhb_xpaMjsi7VMabqpIDVddWg" />
   <title>Q.E.D.</title>
   <meta
     name="description"
@@ -53,17 +52,13 @@
     }
 
     .logo {
-      width: 64px;
-      height: 64px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, #0f766e, #22c55e);
-      color: white;
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.04em;
       margin-bottom: 20px;
+    }
+
+    .logo img {
+      display: block;
+      width: 96px;
+      height: auto;
     }
 
     h1 {
@@ -109,15 +104,6 @@
       transition: 0.2s ease;
     }
 
-    .button {
-      background: var(--accent);
-      color: white;
-    }
-
-    .button:hover {
-      background: var(--accent-hover);
-    }
-
     .link {
       border: 1px solid var(--line);
       color: var(--text);
@@ -141,6 +127,10 @@
         border-radius: 20px;
       }
 
+      .logo img {
+        width: 80px;
+      }
+
       h1 {
         font-size: 32px;
       }
@@ -153,7 +143,6 @@
         flex-direction: column;
       }
 
-      .button,
       .link {
         width: 100%;
       }
@@ -163,25 +152,24 @@
 <body>
   <main class="wrap">
     <section class="card">
-      <div class="logo">Q.</div>
+      <div class="logo">
+        <img src="./logo.svg" alt="Q.E.D. 로고" />
+      </div>
+
       <h1>Q.E.D.</h1>
       <p class="lead">
         Q.E.D.는 문제 풀이 기록, 통계, 랭킹 기능을 제공하는 학습용 모바일 앱입니다.
       </p>
 
       <div class="section">
-        <p>
-          서비스 관련 안내는 아래 문서에서 확인할 수 있습니다.
-        </p>
+        <p>서비스 관련 안내는 아래 문서에서 확인할 수 있습니다.</p>
         <div class="links">
           <a class="link" href="./privacy.html">개인정보처리방침</a>
           <a class="link" href="./terms.html">이용약관</a>
         </div>
       </div>
 
-      <p class="meta">
-        문의: qed.official.app@gmail.com
-      </p>
+      <p class="meta">문의: qed.official.app@gmail.com</p>
     </section>
   </main>
 </body>
