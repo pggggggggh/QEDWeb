@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q.E.D.</title>
   <meta
     name="description"
-    content="Q.E.D.는 문제 풀이 기록, 통계, 랭킹을 제공하는 학습 앱입니다."
+    content="Q.E.D. is a mobile learning app that provides quiz solving records, statistics, and rankings."
   />
   <style>
     :root {
@@ -43,8 +43,7 @@
     .card {
       width: 100%;
       max-width: 760px;
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.96);
       border: 1px solid var(--line);
       border-radius: 24px;
       padding: 40px 28px;
@@ -85,34 +84,27 @@
       border-top: 1px solid var(--line);
     }
 
-    .links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 18px;
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
     }
 
-    .button,
-    .link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      border-radius: 12px;
-      padding: 12px 16px;
+    .policy-links {
+      margin-top: 12px;
+    }
+
+    .policy-links p + p {
+      margin-top: 10px;
+    }
+
+    a {
+      color: var(--accent);
       font-weight: 600;
-      transition: 0.2s ease;
     }
 
-    .link {
-      border: 1px solid var(--line);
-      color: var(--text);
-      background: white;
-    }
-
-    .link:hover {
-      border-color: #b8c3cf;
-      background: #f9fafb;
+    a:hover {
+      color: var(--accent-hover);
     }
 
     .meta {
@@ -138,14 +130,6 @@
       .lead {
         font-size: 16px;
       }
-
-      .links {
-        flex-direction: column;
-      }
-
-      .link {
-        width: 100%;
-      }
     }
   </style>
 </head>
@@ -153,23 +137,38 @@
   <main class="wrap">
     <section class="card">
       <div class="logo">
-        <img src="./logo.svg" alt="Q.E.D. 로고" />
+        <img src="https://pggggggggh.github.io/QEDWeb/logo.svg" alt="Q.E.D. logo" />
       </div>
 
       <h1>Q.E.D.</h1>
       <p class="lead">
-        Q.E.D.는 문제 풀이 기록, 통계, 랭킹 기능을 제공하는 학습용 모바일 앱입니다.
+        Q.E.D. is a mobile learning app that provides quiz solving records, statistics, and rankings.
       </p>
 
       <div class="section">
-        <p>서비스 관련 안내는 아래 문서에서 확인할 수 있습니다.</p>
-        <div class="links">
-          <a class="link" href="./privacy.html">개인정보처리방침</a>
-          <a class="link" href="./terms.html">이용약관</a>
+        <h2>Legal</h2>
+        <div class="policy-links">
+          <p>
+            Privacy Policy:
+            <a href="https://pggggggggh.github.io/QEDWeb/privacy.html">
+              Privacy Policy / 개인정보처리방침
+            </a>
+          </p>
+          <p>
+            Terms of Service:
+            <a href="https://pggggggggh.github.io/QEDWeb/terms.html">
+              Terms of Service / 이용약관
+            </a>
+          </p>
         </div>
       </div>
 
-      <p class="meta">문의: qed.official.app@gmail.com</p>
+      <div class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:qed.official.app@gmail.com">qed.official.app@gmail.com</a></p>
+      </div>
+
+      <p class="meta">Official website for the Q.E.D. app.</p>
     </section>
   </main>
 </body>
